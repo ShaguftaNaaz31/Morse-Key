@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Roboto:wght@300;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/morse-code-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#idImage {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-radius: 30%;
+  transform: rotate(-20deg);
+}
+
+.responsive {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+}
+
+#idNaaz {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-40 {
+  float: left;
+  width: 40%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.col-60 {
+  float: left;
+  width: 60%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.col-70 {
+  float: left;
+  width: 70%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.mg-left-40 {
+  margin-left: 40%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(180, 66, 180);
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #e6f79f;
+  font-family: Roboto, sans-serif;
+  font-size: large;
+  color: #000;
+}
+
+label {
+  padding: 10px 10px 10px 0;
+  font-size: 15px;
+  font-weight: bolder;
+  color: rgb(90, 7, 90);
+}
+
+#signUpForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 55%;
+  height: 60%;
+  background-color: rgb(241, 241, 58);
+  padding: 5% 10%;
+  border: 1px solid rgb(129, 11, 129);
+  border-radius: 20px;
+  box-shadow: -3px -3px 7px 4px rgb(122, 12, 122);
+}
+
+.btn {
+  background-color: rgb(129, 11, 129);
+  width: 50%;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 20px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: rgb(129, 11, 129);
+  border: 2.5px solid rgb(129, 11, 129);
+  border-radius: 10px;
+  cursor: pointer;
+}

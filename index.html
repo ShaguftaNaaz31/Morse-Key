@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morse-Key</title>
+    <link rel="shortcut icon" href="images/morse-logo.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img
+      src="images/morse-logo.png"
+      alt="morse logo"
+      id="idImage"
+      width="160px"
+      height="160px"
+      class="responsive"
+    />
+    <form action="" id="signUpForm">
+      <div class="row">
+        <div class="col-40"><label for="userName">Name </label></div>
+        <div class="col-60">
+          <input type="text" name="userName" id="idUser" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-40"><label for="userAge">Age </label></div>
+        <div class="col-60">
+          <input type="text" name="userAge" id="idAge" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-40"><label for="gender">Gender </label></div>
+        <div class="col-60">
+          <input type="radio" name="gender" value="Male" id="idMale" />
+          <label for="idMale">Male</label>
+          <input type="radio" name="gender" value="Female" id="idFemale" />
+          <label for="idFemale">Female</label>
+          <input type="radio" name="gender" value="LGBT" id="idLGBT" />
+          <label for="idLGBT">LGBT</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-40"><label for="interest">Interests </label></div>
+        <div class="col-60" class="seprateValue">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="checkbox" name="interest" id="idDance" />
+                  <label for="idDance">Dancing</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="interest" id="idSing" />
+                  <label for="idSing">Singing</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="interest" id="idPaint" />
+                  <label for="idPaint">Painting</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="interest" id="idRead" />
+                  <label for="idRead">Novels</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="interest" id="idOut" />
+                  <label for="idOut">Outing</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="interest" id="idOthers" />
+                  <label for="idOthers">Others</label>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-70">
+          <label for="learnMorse">Why do you want to learn Morse Code?</label>
+        </div>
+        <div class="col-60 mg-left-40">
+          <textarea
+            name="learnMorse"
+            id="idMorse"
+            cols="40"
+            rows="5"
+          ></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-40"><label for="userEmail">Email address </label></div>
+        <div class="col-60">
+          <input type="email" name="userEmail" id="idEmail" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-40">
+          <label for="confirmEmail">Confirm Email </label>
+        </div>
+        <div class="col-60">
+          <input type="email" name="confirmEmail" id="idConfirm" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-40"><label for="signUpError"></label></div>
+        <div class="col-60">
+          <button id="submit" class="btn">Submit</button>
+        </div>
+      </div>
+    </form>
+    <img
+      src="images/naaz-codes-logo.png"
+      alt="naaz codes logo"
+      width="100px"
+      height="100px"
+      id="idNaaz"
+    />
+  </body>
+</html>
